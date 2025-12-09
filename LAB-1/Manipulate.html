@@ -1,0 +1,48 @@
+//changing the content of an html element(I have taken some text) and we can change the colour of the text
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function change(){
+                var text=document.getElementById("text");
+
+                text.textContent="the content have been changed";
+            }
+            function changecolor(){
+                var text=document.getElementById("text");
+                text.style.color="red";
+            }
+        </script>
+        <p id="text">the original content</p>
+        <label>click the below button to change the above content:</label>
+        <button onclick=change()>CLick it</button>
+        <label>click the below button to change the colour of the content:</label>
+        <button onclick=changecolor()>click it</button>
+    </body>
+</html>
+//to remove and add the content of the page
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+           function remove(){
+                var text=document.getElementById("textt");
+                text.textContent=''
+           }
+           function add(){
+                var text=document.getElementById("textt");
+                text.innerHTML=text.textContent+"some content have been added";
+           }
+        </script>
+        <label>Click the below button to remove the content of the page:</label>
+        <button onclick="remove()">click it</button> </br>
+        <label>Click the below button to add some content:</label>
+        <button onclick="add()">click it</button>
+        <p id="textt">This is some content.</p>
+    </body>
+</html>
+
