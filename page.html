@@ -80,7 +80,15 @@
             transform: translateY(-15px);
         }
            }
-
+        
+        .audioo{
+            border-radius: 12px;
+            box-shadow:0 10px 81px cyan;
+        }
+        .videoo{
+            border-radius: 12px;
+            box-shadow: 0 10px 81px burlywood;
+        }
 
     </style>
     <body>
@@ -88,14 +96,26 @@
             <div class="logo">
                 <a href="page.html"><img src="logoll.png"></a>
             </div>
-            <div align="right">
+            <!-- <div align="right">
                 <nav style="font-style: italic;">
                     <a href="" style="color: black;text-decoration: none;">Attacks</a>&nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="" style="color: black;text-decoration: none;">Solutions</a>&nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="" style="color: black;text-decoration: none;">web threats</a>&nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="" style="color:black;text-decoration: none;">OWASP Top10</a>
                 </nav>
-            </div>
+            </div> -->
+            <navbar>
+                <div class="nav" align="right">
+                    <ul>
+                        <li>
+                            <a href="" style="color: black;text-decoration: none;">Attacks</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color: black;text-decoration: none;">Solutions</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color: black;text-decoration: none;">web threats</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="" style="color:black;text-decoration: none;">OWASP Top10</a>
+                        </li>
+                    </ul>
+                </div>
+            </navbar>
         </header>
         </br>
         </br>
@@ -118,8 +138,16 @@
             <img src="malware.png" alt="Description 3">
 
         </div>
+        <h2 style="color: whitesmoke;">Top 10 cyber attacks in history:</h2>
+        <video controls class="videoo">
+            <source src="aware.mp4">
+        </video>
+        <h2 style="color: white;">Threat Buzzer:</h2>
+        <p style="color: whitesmoke; text-decoration: wavy;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This type of threat buzzers will be activated if any cyber breaches happen.</p>
+        <audio controls class="audioo">
+            <source src="buzzer.mp3">
+        </audio>
         </br></br>
-        <marquee scrollamount="20">
-        <footer style="color: whitesmoke; text-align: center;"> &copy; CyberGuard </footer></marquee>
+        <footer style="color: whitesmoke; text-align: center; background:gray;"> &copy; CyberGuard </footer>
     </body>
 </html>
