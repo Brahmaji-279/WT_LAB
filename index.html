@@ -14,6 +14,15 @@
             background-attachment: fixed;
             background-size: cover;
         }
+        .logo{
+            border: 2px solid black;
+            width: fit-content;
+            border-radius: 10px;
+            transition:transform 0.4s ease;
+        }
+        .logo:hover{
+            transform:scale(1.3)
+        }
         .box{
             border: 2px solid rgba(255,255,255,0.7);
             padding: 20px;
@@ -23,11 +32,7 @@
             border-radius: 10px;
             backdrop-filter: blur(5px);
         }
-        .logo img{
-            border-radius: 100%;
-            display: block;
-            height:100px;
-        }
+        
         .what{
             border: 2px solid rgba(255,255,255,0.7);
             padding: 20px;
@@ -89,34 +94,39 @@
             border-radius: 12px;
             box-shadow: 0 10px 81px burlywood;
         }
+        .container{
+            display:flex;
+
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+        }
+        .navbar a{
+            margin-left: 20px;
+            
+        }
 
     </style>
     <body>
-        <header style="background-color:grey;" class="header">
-            <div class="logo">
-                <a href="page.html"><img src="logoll.png"></a>
+        
+        <header style="background-color:white;" class="navbar">
+            <div>
+                <h2>⚔️ CyberGuard⚔️</h2>
+                <!-- <a href="page.html"><img src="logoll.png"></a> -->
             </div>
-            <!-- <div align="right">
+            <div align="right">
                 <nav style="font-style: italic;">
-                    <a href="" style="color: black;text-decoration: none;">Attacks</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="" style="color: black;text-decoration: none;">Solutions</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="" style="color: black;text-decoration: none;">web threats</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="" style="color:black;text-decoration: none;">OWASP Top10</a>
+                    <a href="attacks.html" style="color: black;text-decoration: none;">Attacks</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                   <a href="solutions.html" style="color: black;text-decoration: none;">Solutions</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="threats.html" style="color: black;text-decoration: none;">web threats</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="owasp10.html" style="color:black;text-decoration: none;">OWASP Top10</a>
                 </nav>
-            </div> -->
-            <navbar>
-                <div class="nav" align="right">
-                    <ul>
-                        <li>
-                            <a href="" style="color: black;text-decoration: none;">Attacks</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="" style="color: black;text-decoration: none;">Solutions</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="" style="color: black;text-decoration: none;">web threats</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="" style="color:black;text-decoration: none;">OWASP Top10</a>
-                        </li>
-                    </ul>
-                </div>
-            </navbar>
+            </div>
         </header>
+        
         </br>
         </br>
         <center>
@@ -148,6 +158,6 @@
             <source src="buzzer.mp3">
         </audio>
         </br></br>
-        <footer style="color: whitesmoke; text-align: center; background:gray;"> &copy; CyberGuard </footer>
+        <footer style="color:black; text-align: center; background:white;"> &copy; CyberGuard </footer>
     </body>
 </html>
