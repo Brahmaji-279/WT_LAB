@@ -148,4 +148,34 @@
             background-color: rgba(0,0,0,0.3);
             border-color: rgba(0,0,0,0.3);
         }
-        
+    
+
+    /* owasptop10 css */
+    .body2{
+        background-color:#212121;
+        font-family:'Roboto',sans-serif;
+    }
+    .header1{
+        background-color:whitesmoke;
+        border-radius:100px;
+    }
+    .iframe-section{
+        display: flex;
+        gap: 30px;
+        margin:30px;
+    }
+    .text{
+        flex:1;
+        border: 2px solid rgba(0,0,0,0.3);
+        padding: 20px;
+        margin: 20px;
+        width:fit-content;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0,0,0,0.3);
+        height:fit-content;
+        color: whitesmoke;
+    }
+    .iframee{
+        flex:2;
+    }
